@@ -18,9 +18,10 @@
     <ApplicationIcon>Resources\JustEasyOverlayIcon.ico</ApplicationIcon>
     <Version>0.1.0.0</Version>
     <AssemblyVersion>$(PackageVersion)</AssemblyVersion>
-    <FileVersion>${PackageVersion}</FileVersion>
+    <FileVersion>$(PackageVersion)</FileVersion>
 	<InformationalVersion>$(PackageVersion)</InformationalVersion>
 	<IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+	<AssemblyName>JustEasyOverlay</AssemblyName>
   </PropertyGroup>
   
   <ItemGroup>
