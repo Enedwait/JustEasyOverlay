@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <StartupObject>JustEasyOverlay.WinForms.Program</StartupObject>
+    <Title>JustEasyOverlay.WinForms</Title>
+    <Copyright>Oleg Tolmachev</Copyright>
+    <Authors>Oleg Tolmachev</Authors>
+    <Company>Nevalyaga</Company>
+    <PackageIcon>JustEasyOverlay_Icon_1024x1024.png</PackageIcon>
+    <PackageTags>Oleg, Oleg Tolmachev, Tolmachev, OKRT, Nevalyaga, Tolmach, Tolmach Yovoleg, Yovoleg</PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
+    <AssemblyTitle>JustEasyOverlay</AssemblyTitle>
+    <ApplicationIcon>Resources\JustEasyOverlayIcon.ico</ApplicationIcon>
+    <Version>0.1.0.0</Version>
+    <AssemblyVersion>$(PackageVersion)</AssemblyVersion>
+    <FileVersion>${PackageVersion}</FileVersion>
+	<InformationalVersion>$(PackageVersion)</InformationalVersion>
+	<IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\JustEasyOverlayIcon.ico" />
+    <EmbeddedResource Include="Resources\JustEasyOverlay_Icon_1024x1024.png" />
+    <EmbeddedResource Include="Resources\YO.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
